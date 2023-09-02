@@ -364,8 +364,23 @@ body {
 
 .hero .arrow { display: none; }
 
+.hero-title{
+  color: white;
+}
+
+.hero-title > span{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    text-align: center;
+    font-size: 10rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow: 1px 1px 0 #333, 2px 2px 0 #3a3a3a, 3px 3px 0 #575757, 4px 4px 0 #6b6b6b;
+    
+}
+
 .hero {
-  background-color: var(--bg-seashell);
+  background-image: url("/assets/images/main_pizza.jpg");
   padding-block: 180px var(--section-spacing);
 }
 
@@ -387,14 +402,14 @@ body {
   #POPULAR
 \*-----------------------------------*/
 
-.popular { background-color: var(--bg-sinopia); }
+.popular { background: url("/assets/images/fond-photo-bois-840x473.jpg"); }
 
 .popular :is(.section-subtitle, .title) { color: var(--text-white); }
 
 .popular .section-title { margin-block-end: 50px; }
 
 .popular-card {
-  background-color: var(--bg-white);
+  background-color:#2e1b0a;
   padding: 30px 20px;
   border-radius: var(--radius-12);
   display: flex;
@@ -405,7 +420,7 @@ body {
 .popular-card .card-icon img { width: 30px; }
 
 .popular-card .card-title {
-  color: var(--text-rich-black-fogra-29);
+  /* color: var(--text-rich-black-fogra-29); */
   transition: var(--transition-1);
 }
 
@@ -420,7 +435,7 @@ body {
   transition: var(--transition-1);
 }
 
-.popular-card:is(:hover, :focus-within) .card-title { color: var(--text-sinopia); }
+.popular-card:is(:hover, :focus-within) .card-title { color: yellow; }
 
 .popular-card:is(:hover, :focus-within) .card-btn {
   background-color: var(--bg-rich-black-fogra-29);
@@ -436,6 +451,12 @@ body {
 \*-----------------------------------*/
 
 .menu .section-title { margin-block-end: 50px; }
+
+.menu{
+  background-image: url(/assets/images/place2.png);
+  background-position: center;
+  background-size: cover;
+}
 
 .section-wrapper {
   display: grid;
@@ -464,13 +485,17 @@ body {
   font-weight: var(--weight-regular);
 }
 
-.menu-text { margin-block: 10px; }
+.menu-text { 
+  margin-block: 10px;
+  color: white;
+ }
 
 .rating-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2px;
+  color: yellow
 }
 
 .rating-text { margin-inline-start: 10px; }
