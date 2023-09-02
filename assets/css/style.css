@@ -2,14 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2023 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -23,7 +15,7 @@
   /* background color */
   --bg-sinopia: hsl(17, 100%, 44%);
   --bg-sinopia-alpha-90: hsla(17, 100%, 44%, 0.9);
-  --bg-sinopia-alpha-7: hsla(17, 100%, 44%, 0.07);
+  --bg-sinopia-alpha-7: #53443F;
   --bg-rich-black-fogra-29: hsl(207, 24%, 7%);
   --bg-rich-black-rogra-29-alpha-50: hsla(207, 24%, 7%, 0.5);
   --bg-white: hsl(0, 0%, 100%);
@@ -35,7 +27,7 @@
   /* text color */
   --text-white: hsl(0, 0%, 100%);
   --text-black: hsl(0, 0%, 0%);
-  --text-sinopia: hsl(17, 100%, 44%);
+  --text-sinopia: gold;
   --text-rich-black-fogra-29: hsl(207, 24%, 7%);
   --text-granite-gray: hsl(0, 0%, 40%);
 
@@ -50,7 +42,7 @@
    */
 
   /* font family */
-  --fontFamily-opensans: 'Open Sans', sans-serif;
+  --fontFamily-opensans: 'Georgia','Open Sans', sans-serif;
   --fontFamily-forum: 'Forum', cursive;
 
   /* font size */
@@ -191,11 +183,12 @@ body {
 .shape { display: none; }
 
 .title {
-  color: var(--text-rich-black-fogra-29);
+  color: white;
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: 1.25;
 }
+
 
 .h1 {
   font-size: var(--fontSize-1);
@@ -246,14 +239,19 @@ body {
 }
 
 
-
+.section-text{
+  color: white;
+}
 
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
-.header-action { display: none; }
+.header-action { 
+  display: none; 
+
+}
 
 .header {
   position: absolute;
@@ -374,8 +372,10 @@ body {
     font-size: 10rem;
     margin-bottom: 50px;
     text-transform: uppercase;
-    color: yellow;
-    text-shadow: 1px 1px 0 #333, 2px 2px 0 #3a3a3a, 3px 3px 0 #575757, 4px 4px 0 #6b6b6b;
+    color: gold;
+    white-space: nowrap;
+    /* text-shadow: 1px 1px 0 #333, 2px 2px 0 #3a3a3a, 3px 3px 0 #575757, 4px 4px 0 #6b6b6b; */
+    text-shadow: 1px 1px 0 var(--bg-white), 2px 2px 0 var(--bg-isabelline), 3px 3px 0 var(--bg-seashell), 4px 4px 0 var(--bg-light-gray);
     
 }
 
@@ -383,6 +383,17 @@ body {
   background-image: url("/assets/images/main_pizza.jpg");
   padding-block: 180px var(--section-spacing);
 }
+
+.hero-content{
+  width: 65rem;
+  font-size: 2rem;
+}
+/* 
+.hero-content p{
+  background-image: url(/assets/images/schedule-item-bg.png);
+  background-size: cover;
+  background-position: center;
+} */
 
 .hero .container {
   display: grid;
@@ -542,6 +553,12 @@ body {
 /*-----------------------------------*\
   #RESERVATION
 \*-----------------------------------*/
+.reservation{
+  background-image: url("/assets/images/restau.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .reservation .container {
   display: grid;
@@ -863,6 +880,8 @@ body {
   .header-action {
     display: block;
     margin-inline-start: auto;
+    width: 16rem;
+    background: yellow;
   }
 
   .header-action .btn { display: none; }
