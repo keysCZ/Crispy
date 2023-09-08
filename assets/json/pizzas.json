@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Carte 1",
+      "content": "Contenu de la carte 1",
+      "image": "assets/img/p1.png",
+      "formats" : [
+        {
+            "taille" : "petite",
+            "prix" : "15"
+        },
+        {
+            "taille" : "moyenne",
+            "prix" : "19"
+        },
+        {
+            "taille" : "large",
+            "prix" : "25"
+        }
+      ]
+    },
+    {
+      "title": "Carte 1",
+      "content": "Contenu de la carte 1",
+      "image": "assets/img/p1.png",
+      "formats" : [
+        {
+            "taille" : "petite",
+            "prix" : "15"
+        },
+        {
+            "taille" : "moyenne",
+            "prix" : "19"
+        },
+        {
+            "taille" : "large",
+            "prix" : "25"
+        }
+      ]
+    },
+    {
+      "title": "Carte 1",
+      "content": "Contenu de la carte 1",
+      "image": "assets/img/p1.png",
+      "formats" : [
+        {
+            "taille" : "petite",
+            "prix" : "15"
+        },
+        {
+            "taille" : "moyenne",
+            "prix" : "19"
+        },
+        {
+            "taille" : "large",
+            "prix" : "25"
+        }
+      ]
+    }
+  ]

@@ -228,6 +228,7 @@ body {
 }
 .reservation-content, .grid-list{
   background-color: rgba(79, 7, 7, 0.3);
+  background-size : cover;
   padding: 2rem;
   border-radius: 5rem;
 }
@@ -331,7 +332,9 @@ body {
 
 .navbar-list { margin-block-end: 40px; }
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--border-cultured); }
+.navbar-item:not(:last-child) { 
+  border-block-end: 1px solid var(--border-cultured); 
+}
 
 .navbar-link {
   color: var(--text-black);
@@ -386,6 +389,7 @@ body {
 
 .hero {
   background-image: url("/assets/images/main_pizza.jpg");
+  background-size : cover;
   padding-block: 180px var(--section-spacing);
 }
 
@@ -418,7 +422,10 @@ body {
   #POPULAR
 \*-----------------------------------*/
 
-.popular { background: url("/assets/images/fond-photo-bois-840x473.jpg"); }
+.popular { 
+  background: url("/assets/images/fond-photo-bois-840x473.jpg"); 
+  background-size : cover;
+}
 
 .popular :is(.section-subtitle, .title) { color: var(--text-white); }
 
