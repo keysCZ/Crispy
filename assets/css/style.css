@@ -226,6 +226,11 @@ body {
   display: grid;
   gap: 30px;
 }
+.reservation-content, .grid-list{
+  background-color: rgba(79, 7, 7, 0.3);
+  padding: 2rem;
+  border-radius: 5rem;
+}
 
 .separator {
   flex-grow: 1;
@@ -472,6 +477,7 @@ body {
 .section-wrapper {
   display: grid;
   gap: 50px;
+  
 }
 
 .menu-item {
