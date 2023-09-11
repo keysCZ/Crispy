@@ -141,13 +141,15 @@ address { font-style: normal; }
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+
 }
 
 body {
   font-family: var(--fontFamily-opensans);
   background-color: var(--bg-white);
   color: var(--text-granite-gray);
-  font-size: var(--fontSize-6);²  
+  font-size: var(--fontSize-6);
+  
   line-height: 1.65;
 }
 
@@ -370,21 +372,30 @@ body {
 
 .hero .arrow { display: none; }
 
+h1{
+  white-space: nowrap;
+}
+
 .hero-title{
   color: white;
 }
 
-.hero-title > span{
+.impact{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
-    text-align: center;
     font-size: 10rem;
     margin-bottom: 50px;
     text-transform: uppercase;
     color: gold;
-    white-space: nowrap;
+    display: inline;
+    /* white-space: nowrap; */
     /* text-shadow: 1px 1px 0 #333, 2px 2px 0 #3a3a3a, 3px 3px 0 #575757, 4px 4px 0 #6b6b6b; */
     text-shadow: 1px 1px 0 var(--bg-white), 2px 2px 0 var(--bg-isabelline), 3px 3px 0 var(--bg-seashell), 4px 4px 0 var(--bg-light-gray);
     
+}
+
+.grimpt{
+  font-family: "Grimpt Script";
+  display: inline;
 }
 
 .hero {
@@ -394,7 +405,7 @@ body {
 }
 
 .hero-content{
-  width: 65rem;
+  width: 100%;
   font-size: 2rem;
 }
 /* 
@@ -425,6 +436,10 @@ body {
 .popular { 
   background: url("/assets/images/fond-photo-bois-840x473.jpg"); 
   background-size : cover;
+}
+
+#popular-label{
+  color: var(--text-sinopia)
 }
 
 .popular :is(.section-subtitle, .title) { color: var(--text-white); }
@@ -567,7 +582,7 @@ body {
   #RESERVATION
 \*-----------------------------------*/
 .reservation{
-  background-image: url("/assets/images/restau.png");
+  background-image: url("/assets/images/place.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -915,6 +930,8 @@ body {
 
   .header .call:is(:hover, :focus-visible) .span { color: var(--text-sinopia); }
 
+  
+
 
 
   /**
@@ -1198,4 +1215,8 @@ body {
 
   :is(.schedule, .reservation) .container { gap: 120px; }
 
+}
+
+.shortcut{
+  width: 2rem;
 }
