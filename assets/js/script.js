@@ -53,7 +53,7 @@ window.addEventListener("scroll", function () {
 });
 
 // Fonction pour créer une carte à partir des données JSON
-function createCard(cardData) {
+export default function createCard(cardData) {
   const cardDiv = document.createElement('div');
   cardDiv.className = 'card';
 
@@ -88,3 +88,6 @@ function createCard(cardData) {
 
   return cardDiv;
 }
+
+
+export { createCard }

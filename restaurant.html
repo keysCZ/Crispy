@@ -30,6 +30,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/resto.css">
+  <link rel="stylesheet" href="./assets/css/cards.css">
 
   <!-- 
     - preload images
@@ -128,7 +130,20 @@
 
   <main>
     <div id="loader" class="loader"></div>
-
+    <div class="tabs">
+      <button class="tab-header" id="tab1b">Pizzeria</button>
+      <button class="tab-header" id="tab2b">Restaurant</button>
+      <button class="tab-header" id="tab3b">Bar</button>
+  </div>
+    <div class="tab-content" id="tab1">
+      <!-- Le contenu de l'onglet 1 sera généré dynamiquement par JavaScript -->
+  </div>
+  <div class="tab-content" id="tab2">
+      <!-- Le contenu de l'onglet 2 sera généré dynamiquement par JavaScript -->
+  </div>
+  <div class="tab-content" id="tab3">
+      <!-- Le contenu de l'onglet 3 sera généré dynamiquement par JavaScript -->
+  </div>
   </main>
 
 
@@ -298,7 +313,12 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/resto.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script type="module" src="./assets/js/resto.js"></script>
+  <script type="module" src="./assets/js/tabs.js"></script>
 
 
   <!-- 
