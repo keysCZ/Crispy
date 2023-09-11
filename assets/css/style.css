@@ -1219,3 +1219,12 @@ h1{
 .shortcut{
   width: 2rem;
 }
+
+ /**
+   * TABS
+   */
+
+  .tab-content{
+    font-size: 10rem;
+    color: wheat;
+  }
