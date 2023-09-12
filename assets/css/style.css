@@ -1229,14 +1229,23 @@ h1{
  /**
    * TABS
    */
+   @keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
    
-   .text1 {
+   .tab-content {
     font-size: 2.5rem;
     color: wheat;
-    opacity: 0;
-    max-height: 0;
+    /* opacity: 0; */
+    /* max-height: 0; */
     overflow: hidden;
-    transition: max-height 0.4s ease-out, opacity 0.4s linear;
+    animation: taadaa 5s infinite;
   }
 
   .tab-button:active .tab-content{
