@@ -63,7 +63,7 @@
    * SPACING
    */
 
-  --section-spacing: 80px;
+  --section-spacing: 4rem;
 
   /**
    * BOX SHADOW
@@ -103,6 +103,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 li { list-style: none; }
@@ -227,13 +229,16 @@ body {
   display: grid;
   gap: 30px;
 }
-.reservation-content, .grid-list{
+.reservation-content, .grid-list, .tab-content{
   background-color: rgba(79, 7, 7, 0.3);
   background-size : cover;
   padding: 2rem;
   border-radius: 5rem;
 }
 
+#ex{
+  background-color: initial;
+}
 .separator {
   flex-grow: 1;
   border-block-end: 1px dashed currentColor;
@@ -435,6 +440,7 @@ h1{
 .popular { 
   background: url("/assets/images/fond-photo-bois-840x473.jpg"); 
   background-size : cover;
+  height: 70rem;
 }
 
 #popular-label{
@@ -443,7 +449,7 @@ h1{
 
 .popular :is(.section-subtitle, .title) { color: var(--text-white); }
 
-.popular .section-title { margin-block-end: 50px; }
+.popular .section-title { margin-block-end: 2rem; }
 
 .popular-card {
   background-color:#2e1b0a;
@@ -581,7 +587,7 @@ h1{
   #RESERVATION
 \*-----------------------------------*/
 .reservation{
-  background-image: url("/assets/images/place.jpg");
+  background-image: url("/assets/images/gif/place.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1084,7 +1090,7 @@ h1{
      * SPACING
      */
 
-    --section-spacing: 120px;
+    --section-spacing: 7.5rem;
 
   }
 
@@ -1178,7 +1184,7 @@ h1{
    * FOOTER
    */
 
-  .footer-top .container { grid-template-columns: 1fr 0.6fr 1fr 0.8fr; }
+  .footer-top .container { grid-template-columns: .5fr 0.5fr 1fr; }
 
 }
 
@@ -1223,8 +1229,16 @@ h1{
  /**
    * TABS
    */
-
-  .tab-content{
-    font-size: 10rem;
+   
+   .text1 {
+    font-size: 2.5rem;
     color: wheat;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.4s linear;
+  }
+
+  .tab-button:active .tab-content{
+    opacity: 1;
   }

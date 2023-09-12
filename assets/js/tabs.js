@@ -45,6 +45,7 @@ tabButtons.forEach(button => {
     });
 });
 
+  
 //   // Fonction pour changer d'onglet et afficher la barre de chargement
 // function changeTab(tabId) {
 //     // Affiche la barre de chargement
